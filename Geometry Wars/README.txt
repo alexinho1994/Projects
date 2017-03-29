@@ -13,7 +13,3 @@ Grameni Stere-Alexandru
 	inamic nou pe ecran, iar daca nava utilizator se loveste de un inamic, sau daca
 	un inamic este lovit de un proiectil, ii introduc intr-un alt vector pentru a elimina
 	inamicul de pe ecran. 
-
-
-	Probleme aparute: pozitia in care mouse-ul are coordonatele 0,0 este in stanga sus
-	si mi-a luat ceva pana am aflat asta.
