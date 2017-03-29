@@ -2,7 +2,7 @@ Grameni Stere-Alexandru
 333CC
 Tema 1 ASC
 
-Pentru implementare, m-am folosit de clasele bariera din solutia laboratorului 3. Pentru clasa Device, am adaugat o serie de parametrii noi: barr -> bariera pentru sincronizare, lock -> lock-ul pentru date, locationLock -> o lista cu lockuri pentru fiecare locatie.
+Pentru clasa Device, am adaugat o serie de parametrii noi: barr -> bariera pentru sincronizare, lock -> lock-ul pentru date, locationLock -> o lista cu lockuri pentru fiecare locatie.
 In setup_devices setez acesti parametrii pentru primul device, iar restul folosesc aceleasi valori.
 
 Am creat clasa Workpool care primeste lista de scripturi si le distribuie catre 8 threaduri. Clasa ScriptThread primeste datele pentru executia unui script, in executa si apoi trimite datele catre celelalte device-uri.
