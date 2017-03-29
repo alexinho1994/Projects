@@ -1,7 +1,7 @@
 tema2 la PC
 nume: Grameni Stere-Alexandru
 grupa: 313CC
-timp alocat: 20 ore
+
 
 La rularea aplicatiei, veti intra in meniu. Pentru a incepe jocul fara obstacole
 apasati tasta s, pentru a incepe jocul cu obstacole apasati tasta o. Modul cu 
