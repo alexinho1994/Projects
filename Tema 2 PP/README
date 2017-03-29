@@ -1,0 +1,16 @@
+Grameni Stere-Alexandru
+323CC
+
+Pentru neighborsOf am luat din neighbors toate perechile care au prima valoare egala cu valoarea primita si am aplicat snd pe acele perechi.
+
+Pentru randomPath am generat un numar random intre 0 si lungimea listei de vecini si am luat elementul de pe pozitia generata. Am facut asta intr-un iterate pentru a genera la infinit.
+
+Pentru terminatePath am verificat daca elementul curent este 12 sau 8.
+
+Pentru randompaths am folosit randomPath intr-un iterate.
+
+reinforcements si initialEstimation le-am implementat folosind o functie care intoarce 1 pt val 12, -1 pt 8 si 0 pentru restul
+
+Pentru updateEstimation am creat o lista de tupluri de forma (stare, valoare starii vecine) si am apelat accum
+
+scaledLearningRates am implementat-o cu un iterate in care inmultesc rezultatul anterior cu scaleFactor

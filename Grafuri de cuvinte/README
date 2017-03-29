@@ -1,0 +1,13 @@
+tema3 la sd
+Nume:Grameni Stere-Alexandru
+Grupa: 313CC
+Timp alocat: 10-12 ore
+implementare:
+	Am reprezentat graful printr-o structura care are o lista pentru fiecare nod. In lista am cuvantul, numarul de aparitii in text si cate o lista pentru cuvintele care apar dupa si respectiv inaintea cuvantului curent. 
+	In functia addNode creez un nod nou pentru un cuvant, daca acesta nu are deja un nod si actualizez lista succesorilor si predecesorilor. 
+	La inceput numar de cate ori apar separatorii si aloc memorie in lista de adiacenta. Urmeaza sa citesc iar textul, caracter cu caracter si sa delimitez cuvintele, pe care le trimit ca parametrii pentru functia addNode. In cuv voi retine cuvantul curent si in cuv2 voi retine cuvantul precedent. 
+	In continuare calculez maximul odds. Parcurg lista de adiacenta si iau fiecare sintagma in parte, dupa care calculez o11, o12, o21 si o22, apoi logaritmez.
+	Repet algoritmul de mai sus si calculez costurile pentru fiecare arc in parte, apoi trec costurile intr-o matrice. Pentru nodurile intre care nu exista arce in matrice va fi 999999.
+	Citesc cuvintele si parcurg lista de adiacenta pentru a lua indicii din matrice si afisez costurile.
+	Pentru taskul doi am implementat Dijkstra. Am folosit 3 vectori, unul pentru a retine drumul cel mai scurt de la un nod la toate nodurile, unul pentru a vedea nodurile deja vizitate si unul in care pun nodul "tata" pentru fiecare nod.
+	Initial pun linia i din matrice in vectorul de costuri, dupa care merg in nodul cu costul cel mai mic si actualizez vectorul de costuri. Repet algoritmul pana cand am toate nodurile vor fi vizitate.

@@ -1,0 +1,5 @@
+Grameni Stere-Alexandru
+333CC
+Tema 2 Apd
+
+Am luat clasa WorkPool din scheletul laboratorului 7, si am modificat doar functia de oprire. Clasa Workr am luat-o tot din laborator si am adaugat functiile pentru Prim, Factorial etc. Am creat clasa Generator care citeste dintr-un fisier primit ca parametru in constructor, asteapta un timp, dupa care incearca sa introduca un eveniment intr-o coada, iar daca acea coada este plina, va astepta eliberarea ei. In main am creat un nr de generatori egal cu numarul de fisiere primite, am pornit generatoarele si workerii, dupa care am sortat vectorii rezultati.

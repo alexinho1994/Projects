@@ -1,0 +1,131 @@
+>userinfo
+<UserName:guest FirstName: LastName: Created:07/01/16,18:38:16 LastLogin:07/01/16,18:38:16
+>login root rootpass
+<Success
+>userinfo
+<UserName:root FirstName: LastName: Created:07/01/16,18:38:16 LastLogin:07/01/16,18:38:54
+>newuser user1 parola1 nume1 prenume1
+<Success
+>newuser user2 parola2 nume2 prenume2
+<Success
+>login user1 parola1
+<Success
+>userinfo
+<UserName:user1 FirstName:nume1 LastName:prenume1 Created:07/01/16,18:39:53 LastLogin:07/01/16,18:40:42
+>mkdir user1home
+<Success
+>cd user1home
+<Success
+>pwd
+<home/user1home
+>touch fisier1 500 -rw-
+<Success
+>mkdir POO
+<Success
+>mkdir IOCLA
+<Success
+>ls -a
+<F: fisier1 500 [07/01/16,18:42:09] -rw-
+D: POO 0 [07/01/16,18:42:52] 
+D: IOCLA 0 [07/01/16,18:43:11] 
+
+>cd POO
+<Success
+>touch tema1.txt 2000
+<Success
+>touch tema2.txt 4000 -rw-
+<Success
+>cd ../IOCLA
+<Success
+>pwd
+<home/user1home/IOCLA
+>touch fisieriocla 5000
+<Success
+>cd ..
+<Success
+>ls -ar
+<D: user1home 11500 [07/01/16,18:41:07] 
+F: fisier1 500 [07/01/16,18:42:09] -rw-
+D: POO 6000 [07/01/16,18:42:52] 
+F: tema1.txt 2000 [07/01/16,18:44:26] 
+F: tema2.txt 4000 [07/01/16,18:44:51] -rw-
+D: IOCLA 5000 [07/01/16,18:43:11] 
+F: fisieriocla 5000 [07/01/16,18:45:51] 
+
+>login user2 parola2
+<Success
+>userinfo
+<UserName:user2 FirstName:nume2 LastName:prenume2 Created:07/01/16,18:40:15 LastLogin:07/01/16,18:47:13
+>rm fisier1
+<Fail
+>cd ..
+<Success
+>mkdir user2home
+<Success
+>cd user2home
+<Success
+>mkdir temauser2
+<Success
+>mkdir tema2user2 -rw-
+<Success
+>cd tema2user2
+<Success
+>pwd
+<home/user2home/tema2user2
+>touch tema2u2 1000 -r-
+<Success
+>rm tema2u2
+<Fail
+>login root rootpass
+<Success
+>userinfo
+<UserName:root FirstName: LastName: Created:07/01/16,18:38:16 LastLogin:07/01/16,18:51:18
+>rm tema2u2
+<Success
+
+>ls
+<
+>cd ../..
+<Success
+>cd ..
+<Fail
+>upload
+<Success
+>ls -ar
+<D: home 11500 [07/01/16,18:38:16] 
+D: user1home 1150 [07/01/16,18:41:07] 
+F: fisier1 500 [07/01/16,18:42:09] -rw-
+D: POO 6000 [07/01/16,18:42:52] 
+F: tema1.txt 2000 [07/01/16,18:44:26] 
+F: tema2.txt 4000 [07/01/16,18:44:51] -rw-
+D: IOCLA 5000 [07/01/16,18:43:11] 
+F: fisieriocla 5000 [07/01/16,18:45:51] 
+D: user2home 0 [07/01/16,18:48:42] 
+D: temauser2 0 [07/01/16,18:49:45] 
+D: tema2user2 0 [07/01/16,18:50:04] -rw-
+
+>rm user1home/fisier1
+<Success
+>rm -r user1home/(.*)O(.*)
+<Success
+>ls -ar
+<D: home 0 [07/01/16,19:42:37] 
+D: user1home 0 [07/01/16,19:43:45] 
+D: user2home 0 [07/01/16,19:45:38] 
+D: temauser2 0 [07/01/16,19:45:49] 
+D: tema2user2 0 [07/01/16,19:46:00] -rw-
+
+>sync
+<
+>ls -ar
+<D: home 11500 [07/01/16,19:42:37] 
+D: user1home 11500 [07/01/16,19:43:45] 
+F: fisier1 500 [07/01/16,19:44:00] -rw-
+D: POO 6000 [07/01/16,19:44:04] 
+F: tema1.txt 2000 [07/01/16,19:44:23] 
+F: tema2.txt 4000 [07/01/16,19:44:40] -rw-
+D: IOCLA 5000 [07/01/16,19:44:08] 
+F: fisieriocla 5000 [07/01/16,19:45:02] 
+D: user2home 0 [07/01/16,19:45:38] 
+D: temauser2 0 [07/01/16,19:45:49] 
+D: tema2user2 0 [07/01/16,19:46:00] -rw-

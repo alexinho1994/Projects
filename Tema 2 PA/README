@@ -1,0 +1,6 @@
+Grameni Stere-Alexandru
+323CC
+
+Pentru prima problema am creat o clasa Muchie pentru a reprezenta muchiile primite din fisier. Am mai creat o clasa Graf. In constructorul acesteia citesc din fisier, setez muchiile si ordinez lista de muchii. In aceasta clasa mai am o metoda Kruskal in care aplic algoritmul kruskal, creez arborele si pentru fiecare rezerva, parcurg graful din primul nod pana gasesc cel de-al doilea nod si creez lantul de la primul la al doilea. Apoi parcurg lantul si gasesc muchia maxima, pe care o sterg. Am mai facut o clasa Arbore in care salvez arborele rezultat din Kruskal.
+
+Pentru a doua problema parcurg o data graful prin dfs si salvez toate nodurile care sunt incluse intr-un ciclu. Apoi mai parcurg o data graful, plecand din nodurile care sunt intr-un ciclu si, daca mai raman noduri nevizitate, parcurg graful plecand din ele. Apoi numar nodurile ramase nevizitate.

@@ -1,0 +1,8 @@
+Grameni Stere-Alexandru
+333CC
+Tema 1 SO
+
+Am implementat bucketurile ca liste inlantuite si hashtable-ul ca un vector de liste. Primul argument al aplicatiei este numarul de bucketuri, apoi, optional, fisiere de intrare. In functia initHash aloc memorie pentru liste, iar in initBucket pentru fiecare lista in parte.
+Functia addCommand primeste bufferul de comenzi, il imparte in cuvinte si apoi, executa comenzile. Functia findInHash apeleaza findInBucket pentru fiecare bucket, iar aceasta cauta cuvantul in bucketul respectiv. addInHash apeleaza addInBucket cu rezultatul intors de functia hash. Pentru remove, caut cuvantul, iar daca acesta exista, apelez removeWord, care elimina cuvantul din bucket. 
+Functia clearHash goleste fiecare bucket, iar pentru printBucket parcurg lista si o afisez. Pentru print apelez printBucket pentru fiecare bucket. 
+Resize am implementat-o cu addInBucket, pentru tabela noua, si removeWord pentru tabela veche, dupa care returnez tabela noua. 

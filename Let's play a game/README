@@ -1,0 +1,21 @@
+Grameni Stere-Alexandru
+323CC
+
+Pentru testul simplu am primit un pachet de la client si am facut exact ce cere.
+Pentru a gasi numarul am creat 2 parametri, primul initializat cu 0 si al doilea cu 999.
+Am trimis jumatatea sumei lor si in functie de ce primesc, bigger sau smaller, un parametru
+devine numarul trimis + sau - 1.
+
+Pentru testul cu ack am facut exact ce am facut si la testul simplu, doar ca de fiecare data
+cand primesc un packet eu trimit ACK inapoi, iar de fiecare data cand trimit un packet astept
+sa primesc ACK.
+
+Pentru testul cu parity, am facut o functie care primeste un string si calculeaza paritatea acestuia.
+Am mai facut o functie care primeste un pachet si verifica paritatea acestuia, o functie care trimite 
+inapoi ACK si o functie care trimite un pachet. Functia care trimite un pachet calculeaza paritatea
+si o lipeste de pachet.
+
+Clientul trimite un pachet si asteapta raspuns din partea mea. Apoi trimite trei pachete si asteapta 
+doua pachete de la mine, dupa care isi alege un numar si eu trebuie sa il ghicesc din 10 incercari.
+
+Am primit un pachet de la client si am afisat ce a trimis, dupa care am urmat instructiunile.

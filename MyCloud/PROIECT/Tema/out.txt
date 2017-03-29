@@ -1,0 +1,5 @@
+User root logat
+User user1 logat
+User user2 logat
+User root logat
+MyInvalidPathException home  root 07/01/16 19:54:44

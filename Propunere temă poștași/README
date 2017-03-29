@@ -1,0 +1,29 @@
+tema1 la PC
+nume: Grameni Stere-Alexandru
+grupa: 313CC
+timp alocat: 11-12 ore
+
+implementare:
+	puntul 1: am creat o functie pentru citirea cartierelor, o functie pentru
+		  citirea pachetelor, o functie pentru scrierea cartierelor si
+		  o functie pentru scrierea pachetelor
+	punctul 2: pentru fiecare pachet, am calculat id-ul cartierului, strada si
+		   numarul, transformand din baza 2 in baza 10
+	punctul 3: functia verifica daca postasul are acelasi id cu id-ul cartierului,
+		   iar daca sunt egale ii distribuie postasului pachetul
+	punctul 4: functia compara fiecare pachet cu celelalte si le ordoneaza in functie
+		   de prioritate, apoi de greutate.
+	punctul 5: am creat o functie care, primind un text ca parametru, calculeaza codul
+		   si il returneaza, si o functie care inverseaza ordinea cuvintelor si 
+		   elimina delimitatorii dintr-un text si care apeleaza functia cod si returneaza
+		   codul
+	punctul 6: am creat o functie care verifica daca un numar este numar prim.
+		   am creat o functie care modifica un cod; aceasta calculeaza mai 
+		   intai factorii primi ai id-ului, apoi transforma codul din baza
+		   10 in baza 2, modifica bitii de pe pozitiile factorilor primi si
+		   transforma inapoi codul in baza 10
+		   am mai folosit o functie care verifica daca un cod trebuie modificat
+	punctul 7: in structura pachete am folosit o variabila suplimentare: codcorect, 
+		   iar apoi verifica daca codcorect este egal cu codul modificat(daca a 
+		   fost modificat); daca sunt egale voi creste un contor
+

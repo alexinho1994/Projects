@@ -1,0 +1,14 @@
+Grameni Stere-Alexandru
+323CC
+
+Pentru problema 1 am retinut in doua variabile primul si ultimul element din sir, si daca acestea erau egale restrang aria de cautare. Daca nu sunt egale caut daca e mai convenabil sa duc un element pe pozitia variabilei dinspre sfarsit decat pe pozitia variabilei dinspre inceput, si in functie de rezultat mut un caracter spre sfarsit sau spre inceput. Daca cele doua variabile nu sunt egale si daca nu mai gasesc elemente egale cu ele, returnez -1 pentru ca nu poate fi palindrom.
+
+Complexitatea este O(n^4/4)
+
+Pentru problema 3 am modificat algoritmul de parantezare prezentat la curs. Am creat o matrice pentru lungime unde pe diagonala am pus 9999, pe pozitiile [i][i+1], daca sunt diferite elementele din vectorul citit pun 3, daca nu pun 9999. Apoi am parcurs matricea "pe diagonale" pentru un interval din vectorul dat. Daca in interval pot sa am un cablaj corect(nr egal de zerouri si de unu), am doua cazuri:
+1. capetele intervalului sunt diferite, caz in care lungimea pozitiei din matrice devine lungimea intervalului fara capete + formula pozitiile si verticala.
+2. capetele sunt egale, caz in care impart intervalul in doua intervale mai mici si le adun lungimile.
+Pentru a retine verticala fiecarui interval am folosit alta matrice pe care o actualizez mereu cand calculez lungimea unui interval.
+Pentru a forma perechi am folosit un vector pe care in actualizez cand actualizez si lungimea.
+
+COmplexitatea este O(2*n^2);

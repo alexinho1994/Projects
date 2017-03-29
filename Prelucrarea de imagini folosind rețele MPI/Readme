@@ -1,0 +1,8 @@
+Grameni Stere-Alexandru
+333CC
+Tema 3 APD
+
+Pentru implementare, am deschis primul fisier, cel pt topologie si, pentru fiecare nod, am citit rank-1 linii, rank fiind numarul nodului. Dupa din urmatoarea linie, am citit vecinii acestuia.
+Apoi pentru fiecare nod, am trimis mesaje catre vecinii acestuia, astfel incat sa aflu parintele. Fiecare nod va avea drept parinte nodul care trimite primul mesaj. Apoi am verificat pentru fiecare nod care este parintele acestuia si care sunt copiii lui si am sters celelalte noduri.
+Dupa procesul 0 citeste din al doilea fisier numarul de imagini si anunta celelalte procese cate imagini vor avea de prelucrat. Citesc din imagine dimensiunea, calculez modul in care voi impartii liniile si anunt celelalte procese, apoi trimit liniile si aplic filtrul.
+Pentru ultima parte, am folosit o matrice cu 2 coloane. Fiecare nod va trimite parintelui numarul de noduri din subarborele lui, astfel acesta va sti cate elemente va primi, apoi nodul trimite parintelui matricea, iar parintele uneste toate matricile de la copiii acestuia.

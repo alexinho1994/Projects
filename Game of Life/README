@@ -1,0 +1,10 @@
+Grameni Stere-Alexandru
+333CC
+Tema 1 APD
+
+Pentru varianta seriala am creat doua matrici, alocate dinamic. Am citit matricea, punand 0 in loc de . si 1 in loc de X.
+Am facut un for pentru nr de iteratii, in care am calculat daca acea celula trebuie sa fie vie sau moarta dupa acea iteratie
+si am modificat a doua matrice. Dupa ce am verificat fiecare celula am copiat a doua matrice in prima si am bordat-o.
+
+Pentru varianta paralela am facut acelasi lucru, dar am paralelizat forurile pentru bordare, copiere si pentru verificarea 
+celulelor. Am paralelizat cu omp parallel for.

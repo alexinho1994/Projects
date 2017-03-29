@@ -1,0 +1,26 @@
+Grameni Stere-Alexandru
+323CC
+
+Am creat o matrice in care salvez username-ul si parola fiecarui utilizator si o lista cu fisierele share-uite.
+Daca un utilizator nu are un director creat pe server, il creez cu comanda mkdir.
+
+Pentru login parcurg matricea si daca usernameul si parola corespund, returnez Success, altfel returnez codul de eroare -3.
+Am retinut intr-un vector pentru fiecare client de cate ori a incercat login-ul. Daca a ajuns la 3, inchid sesiunea clientului.
+In client am o variabila, initial 0, pe care o fac 1 daca se logheaza cu succes, astfel deblochez restul comenzilor.
+
+Pentru logout, modific variabila in 0 in client, daca acesta este logat, daca nu, clientul genereaza eroare si nu mai trimite 
+comanda la server. 
+
+Pentru getuserlist parcurg matricea in care am salvat usernameul si parola fiecarui utilizator si returnez usernameul.
+
+Pentru getfilelist, verific daca utilizatorul exista. Daca exista, parcurs directorul lui de pe server si, pentru fiecare fisier, 
+verific daca acesta este si il lista de fisiere share-uite. Totodata, citesc si dimensiunea fisierului cu lstat.
+
+Pentru share si unshare, verific daca fisierul exista. Daca exista, il introduc sau il scot din lista de fisiere share-uite. In caz 
+ca acesta este deja privat/public, returnez un mesaj de atentionare.
+
+Pentru delete, parcurg listele de upload si download. In cazul in care fisierul este in transfer, returnez eroare, altfel il sterg folosind unlink.
+
+Pentru quit pe client, verific daca am fisiere in transfer, daca nu am, inchid sesiunea.
+
+Pentru quit pe client, trimit fiecarui client un mesaj de atentionare si, dupa ce termin de transferat fisierele, inchid serverul.
