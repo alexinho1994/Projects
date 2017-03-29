@@ -1,7 +1,7 @@
 tema3 la sd
 Nume:Grameni Stere-Alexandru
 Grupa: 313CC
-Timp alocat: 10-12 ore
+
 implementare:
 	Am reprezentat graful printr-o structura care are o lista pentru fiecare nod. In lista am cuvantul, numarul de aparitii in text si cate o lista pentru cuvintele care apar dupa si respectiv inaintea cuvantului curent. 
 	In functia addNode creez un nod nou pentru un cuvant, daca acesta nu are deja un nod si actualizez lista succesorilor si predecesorilor. 
